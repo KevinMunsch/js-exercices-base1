@@ -3,14 +3,23 @@
     <head>
         <title>Exercice_5</title>
         <meta charset="UTF-8">
+        <script type="text/javascript">
+
+        function multiplenbr(form1) {
+          var multiple = document.form1.premier_nombre.value*document.form1.deuxieme_nombre.value;
+          alert(multiple);
+        }
+
+
+        </script>
     </head>
     <body>
-        <form>
+        <form name="form1">
             <label for="premier_nombre">Premier nombre : </label>
             <input type="text" id="premier_nombre" name="premier_nombre" value=""/>
             <label for="deuxieme_nombre">Deuxième nombre : </label>
             <input type="text" id="deuxieme_nombre" name="deuxieme_nombre" value=""/>
-            <button id="valider" name ="valider">Valider</button>
+            <input type="button" value="valider" name ="valider" onclick="multiplenbr(form1)" />
         </form>
     </body>
 </html>

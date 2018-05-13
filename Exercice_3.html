@@ -3,16 +3,19 @@
 <head>
     <title>Exercice_3</title>
     <meta charset="UTF-8">
+    <script type="text/javascript">
+    function controle(form1){
+      var prenom = document.form1.input.value;
+      alert("bonjour, "+prenom);
+    }
+
+    </script>
 </head>
 <body>
-<form>
-    <label for="nom">Nom : </label>
-    <input type="text" name="nom" id="nom" value=""/>
+<form name="form1">
     <label for="prenom">Prénom : </label>
-    <input type="text" name="prenom" id="prenom" value=""/>
-    <label for="ville">Ville : </label>
-    <input type="text" name="ville" id="ville"  value=""/>
-    <button  name="valider" id="valider">Valider</button>
+    <input type="text" name="input" id="prenom" value=""/>
+    <input type="button"  name="bouton" value="valider" onclick="controle(form1)"/>
 </form>
 </body>
 </html>

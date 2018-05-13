@@ -3,8 +3,23 @@
 <head>
     <title>Exercice_8</title>
     <meta charset="UTF-8">
+    <script type="text/javascript">
+    function controle(form1) {
+    var pointure = document.form1.pointure.value;
+    var annee = document.form1.annee.value;
+    var total = (pointure * 2 + 5 * 50 - annee + 1766);
+    alert("Le résultat est:" + "\n" + total);
+  }
+
+    </script>
 </head>
 <body>
-
+  <form name="form1">
+      <label for="pointure">Entrez votre pointure: </label>
+      <input type="text" name="pointure" value=""/>
+      <label for="annee">Votre année de naissance: </label>
+      <input type="text" name="annee" value="">
+      <input type="button" name="bouton" value="Valider" onclick="controle(form1)" >
+  </form>
 </body>
 </html>

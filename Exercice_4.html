@@ -3,8 +3,27 @@
     <head>
         <title>Exercice_4</title>
         <meta charset="UTF-8">
+        <script type="text/javascript">
+        function controle(form1){
+          var nom = document.form1.nom.value;
+          var prenom = document.form1.prenom.value;
+          var ville = document.form1.ville.value;
+
+          alert("bonjour, "+nom+" "+prenom+" "+ville);
+        }
+
+        </script>
     </head>
     <body>
+      <form name="form1">
+          <label for="nom">Nom : </label>
+          <input type="text" name="nom" id="nom" value="" />
+          <label for="prenom">Prénom : </label>
+          <input type="text" name="prenom" id="prenom" value=""/>
+          <label for="ville">ville : </label>
+          <input type="text" name="ville" id="ville" value="" />
+          <input type="button"  name="bouton" value="valider" onclick="controle(form1)" />
+      </form>
 
     </body>
 </html>
